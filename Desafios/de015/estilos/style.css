@@ -48,4 +48,5 @@ img {
 a:hover {
     border: 2px solid yellow;
     border-radius: 50%;
+    transition: border .4s;
 }
