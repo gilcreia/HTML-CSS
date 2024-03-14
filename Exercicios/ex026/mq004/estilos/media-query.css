@@ -23,7 +23,7 @@
 }
 
 /* Para tablet ou retrato */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         background: black url(../imagens/back-tablet.jpg) no-repeat;
     }
@@ -38,7 +38,7 @@
 }
 
 /* para laptopts/desktops, 992px e + */
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     body {
         background: black url(../imagens/back-pc.jpg) no-repeat;
     }
@@ -53,7 +53,7 @@
 }
 
 /* Para grandes telas (tv, laptops e desktops, 1200px e +) */
-@media only screen and (min-width: 1200) {
+@media screen and (min-width: 1200) {
     body {
         background: black url(../imagens/back-tv.jpg) no-repeat;
     }
