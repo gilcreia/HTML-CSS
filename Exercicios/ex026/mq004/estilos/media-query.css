@@ -2,6 +2,66 @@
 
 /* Todas as demais midias*/
 
+/* impressão*/
 @media print {
-    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessario*/
+    }
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através do site www.gilcorreia.com';
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+}
+
+/* Para tablet ou retrato */
+@media only screen and (min-width: 768px) {
+    body {
+        background: black url(../imagens/back-tablet.jpg) no-repeat;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #phone, #print, #pc, #tv {
+        display: none;
+    }
+}
+
+/* para laptopts/desktops, 992px e + */
+@media only screen and (min-width: 992px) {
+    body {
+        background: black url(../imagens/back-pc.jpg) no-repeat;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #phone, #print, #tablet, #tv {
+        display: none;
+    }
+}
+
+/* Para grandes telas (tv, laptops e desktops, 1200px e +) */
+@media only screen and (min-width: 1200) {
+    body {
+        background: black url(../imagens/back-tv.jpg) no-repeat;
+    }
+    #tv {
+        display: block;
+    }
+
+    #phone, #print, #pc, #pc {
+        display: none;
+    }
 }
