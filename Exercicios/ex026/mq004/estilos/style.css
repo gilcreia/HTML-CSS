@@ -11,7 +11,6 @@
 }
 
 html{
-    width: 100vw;
     height: 100vh;
 }
 
@@ -41,6 +40,9 @@ img {
     margin: auto;
 }
 
+#phone {
+    display: block;
+}
 #tablet, #print, #pc, #tv {
     display: none;
 }
