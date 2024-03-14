@@ -17,8 +17,23 @@ h1 {
     text-align: center;
     padding: 10px;
 }
-menu {
+
+#burger{
+    background-color: rgb(56, 55, 55);
     display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
 }
 ul {
     list-style-type: none;
