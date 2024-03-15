@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/mhamburger.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">menu</span>
@@ -33,6 +33,13 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                imen.style.display='block'
+            } else {
+                imen.style.display='none'
+            }
+        }
         function clickMenu() {
             if (imen.style.display=='block') {
                 imen.style.display= 'none'
